@@ -1,0 +1,58 @@
+@import "../pt.quasar.variables.scss";
+.main-menu {
+  border-top: 15px;
+  border-left: 15px;
+  border-right: 15px;
+
+  font-family: "Source sans pro";
+  position: relative;
+  @media screen and (max-width: 1024px) {
+    height: calc(100vh - 238px);
+  }
+
+  .pt-menu-scroll {
+    overflow-y: scroll;
+    height: calc(100vh - 290px);
+    @media screen and (min-width: 1024px) {
+      height: calc(100vh - 190px);
+    }
+    /* width */
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 10px;
+      transition: 0.2s ease-in-out;
+      transition-delay: 0.5s;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background: #b8b8b8;
+      }
+    }
+  }
+
+  .list-icon {
+    size: 13.6px;
+    color: $accent-0;
+    text-align: left;
+  }
+
+  .list-text {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 35.8px;
+  }
+  .logout-item {
+    border-top: 1px solid lightgray;
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+}
