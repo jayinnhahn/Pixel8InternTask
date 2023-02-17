@@ -1,0 +1,301 @@
+.left-drawer {
+  .q-drawer--left {
+    z-index: 1 !important;
+  }
+  .side-nav {
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0px;
+
+    .nav-body {
+      // background: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 20px 0px;
+
+      .logo {
+        display: flex;
+        flex-direction: column;
+
+        img {
+          margin: 0 auto;
+          margin-top: 10px;
+          width: 50%;
+        }
+      }
+
+      .btnGroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+          margin: 0 auto;
+          margin-bottom: 20px;
+          width: 35%;
+        }
+
+        .btnHome {
+          font-size: 20px;
+        }
+
+        .btnMenu {
+          font-size: 20px;
+        }
+
+        .lblMenu {
+          text-align: center;
+          text-transform: capitalize;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .side-nav {
+      .nav-body {
+        .logo {
+          img {
+            width: 45%;
+            margin-top: 0px;
+          }
+        }
+
+        .btnGroup {
+          img {
+            width: 30%;
+          }
+
+          .btnHome {
+            font-size: 25px;
+          }
+
+          .btnMenu {
+            font-size: 25px;
+          }
+
+          .lblMenu {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  // Style on Mobile Devices
+  @media only screen and (max-width: 600px) {
+    .q-drawer {
+      width: 325px !important;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0px 3px 6px #00000029;
+      display: flex;
+      flex-direction: column;
+      left: 0;
+      position: absolute;
+      top: 0;
+
+      .drawer-mobile-cont {
+        overflow: hidden;
+        .drawer-header {
+          display: flex;
+          align-items: flex-start;
+          margin-right: 0.18px;
+          min-height: 181px;
+          padding: 28px 35.6px;
+          width: 324px;
+          background: rgba(224, 56, 74, 1);
+
+          .column {
+            .userInfo {
+              height: 44px;
+              margin-top: 13px;
+              position: relative;
+              width: 164px;
+
+              .userName {
+                position: absolute;
+                left: 0;
+                font-family: "Source Sans Pro";
+                font-size: 20px;
+                letter-spacing: 0;
+                color: rgba(245, 245, 245, 1);
+                font-weight: 700;
+                line-height: 20px;
+                top: 0;
+                width: 164px;
+              }
+
+              .userEmail {
+                position: absolute;
+                left: 0;
+                font-family: "Source Sans Pro";
+                font-size: 10px;
+                letter-spacing: 0;
+                color: rgba(245, 245, 245, 1);
+                font-weight: 400;
+                line-height: 10px;
+                top: 28px;
+                width: 67px;
+              }
+            }
+
+            .btnCloseDrawer {
+              position: absolute;
+              color: #fff;
+              font-size: 16px;
+              left: 280px;
+              top: 20px;
+            }
+          }
+        }
+
+        .drawer-body {
+          .item {
+            display: flex;
+            margin-left: 10px;
+            margin-top: 26px;
+            width: auto;
+
+            .title {
+              .q-btn {
+                font-weight: 600;
+                color: rgba(51, 60, 82, 1);
+                font-size: 15px;
+                width: 300px;
+              }
+
+              .q-expansion-item {
+                width: 300px;
+                font-weight: 600;
+                color: rgba(51, 60, 82, 1);
+                font-size: 15px;
+
+                .exandItem {
+                  .itemButton {
+                    width: 245px;
+                  }
+
+                  .external {
+                    color: rgba(224, 56, 74, 1);
+                    font-family: "Source Sans Pro";
+                    font-size: 15px;
+                    font-weight: 600;
+                  }
+                }
+              }
+
+              .q-icon {
+                color: rgba(224, 56, 74, 1);
+              }
+
+              p {
+                padding-left: 15px;
+              }
+            }
+          }
+        }
+
+        .drawer-footer {
+          position: absolute;
+          top: 0;
+
+          .drawer-mobile-cont {
+            overflow: hidden;
+            .drawer-header {
+              display: flex;
+              align-items: flex-start;
+              margin-right: 0.18px;
+              min-height: 181px;
+              padding: 28px 35.6px;
+              width: 324px;
+              background: rgba(224, 56, 74, 1);
+
+              .column {
+                .userInfo {
+                  height: 44px;
+                  margin-top: 13px;
+                  position: relative;
+                  width: 164px;
+
+                  .userName {
+                    position: absolute;
+                    left: 0;
+                    font-family: "Source Sans Pro";
+                    font-size: 20px;
+                    letter-spacing: 0;
+                    color: rgba(245, 245, 245, 1);
+                    font-weight: 700;
+                    line-height: 20px;
+                    top: 0;
+                    width: 164px;
+                  }
+
+                  .userEmail {
+                    position: absolute;
+                    left: 0;
+                    font-family: "Source Sans Pro";
+                    font-size: 10px;
+                    letter-spacing: 0;
+                    color: rgba(245, 245, 245, 1);
+                    font-weight: 400;
+                    line-height: 10px;
+                    top: 28px;
+                    width: 67px;
+                  }
+                }
+
+                .btnCloseDrawer {
+                  position: absolute;
+                  color: #fff;
+                  font-size: 16px;
+                  left: 280px;
+                  top: 20px;
+                }
+              }
+            }
+
+            .q-icon {
+              color: rgba(224, 56, 74, 1);
+            }
+
+            .drawer-footer {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: auto;
+
+              .footer-cont {
+                padding: 30px 15px;
+                margin: 0 auto;
+                width: 90%;
+                border-top: 1px solid #aeb7cc;
+
+                .item {
+                  .q-btn {
+                    width: 260px;
+                    color: rgba(51, 60, 82, 1);
+                    font-size: 15px;
+                    font-weight: 600;
+                  }
+
+                  .q-icon {
+                    color: rgba(224, 56, 74, 1);
+                  }
+
+                  p {
+                    padding-left: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

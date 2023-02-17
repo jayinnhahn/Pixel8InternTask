@@ -1,0 +1,126 @@
+@import "../../css/pt.quasar.variables.scss";
+.pt-header {
+  z-index: 1;
+  @media screen and (max-width: $breakpoint-xs-max) {
+    border-bottom: 1px solid $accent-0;
+  }
+  .tablet-desktop-view {
+    .main-search {
+      background-color: #ffffff;
+      .q-field__native {
+        color: $accent-1;
+      }
+    }
+    .icon-activity,
+    .icon-notification {
+      border-radius: 50px;
+      padding: 6px;
+    }
+    .icon-notification {
+      .notification-container {
+        display: none;
+        border-radius: 6px;
+        width: 230px;
+        right: 0;
+        top: 45px;
+        .ellipse {
+          width: 6px;
+          height: 6px;
+          border-radius: 3px;
+        }
+      }
+      &:hover {
+        .notification-container {
+          display: block;
+        }
+      }
+    }
+    .pt-bg-hover-accent-4 {
+      transition: 0.2s ease-out;
+      &:hover {
+        background-color: #e2e2e2;
+      }
+    }
+    .avatar {
+      .q-avatar {
+        @media screen and (min-width: 1024px) {
+          margin-right: 8px;
+        }
+        .q-img {
+          transition: 0.2s;
+          border-radius: 50px;
+          width: 100%;
+          height: 100%;
+        }
+        &:hover {
+          @media screen and (max-width: 1024px) {
+            .q-img {
+              width: 70%;
+              height: 70%;
+            }
+          }
+        }
+      }
+
+      .profile-container {
+        .content {
+          width: 110px;
+          border-radius: 6px;
+        }
+        transition: 0.2s ease-out;
+        visibility: hidden;
+        opacity: 0;
+        right: 0;
+        top: 51px;
+        @media screen and (min-width: 1024px) {
+          padding-top: 20px;
+          right: 21px;
+          top: 35px;
+        }
+      }
+
+      &:hover {
+        .profile-container {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  .q-field__control {
+    border-radius: 5px !important;
+    border: 1px solid $accent-0;
+  }
+  .avatar {
+    @media screen and (min-width: $breakpoint-sm-max) {
+      padding-right: 16px;
+    }
+  }
+  .desktop-materials {
+    display: none;
+    @media screen and (min-width: $breakpoint-sm-max) {
+      display: block;
+    }
+  }
+  .tablet-materials {
+    @media screen and (min-width: $breakpoint-sm-max) {
+      display: none;
+    }
+  }
+}
+
+.pt-dark-mode {
+  .pt-header {
+    .tablet-desktop-view {
+      .main-search {
+        .q-field__native {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

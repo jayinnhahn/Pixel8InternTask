@@ -1,0 +1,175 @@
+/**
+  Core Customed Text Sizes
+*/
+
+// Headings
+.text-60 {
+  @media screen and (min-width: $breakpoint-sm-min) {
+    // 768
+    font-size: 30px;
+  }
+  @media screen and (min-width: $breakpoint-sm-max) {
+    // 1024
+    font-size: 40px;
+  }
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 60px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 64px;
+  }
+}
+.text-33 {
+  font-size: 28px;
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 33px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 37px;
+  }
+}
+.text-32 {
+  font-size: 20px;
+  @media screen and (min-width: $breakpoint-sm-min) {
+    // 768
+    font-size: 27px;
+  }
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 32px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 36px;
+  }
+}
+.text-30 {
+  font-size: 26px;
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 34px;
+  }
+}
+.text-28 {
+  font-size: 23px;
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 28px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 32px;
+  }
+}
+.text-26 {
+  font-size: 20px;
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 26px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 30px;
+  }
+}
+// Only for icons
+.text-24 {
+  font-size: 24px;
+  @media screen and (min-width: $breakpoint-sm-max) and (max-width: $breakpoint-xl-min) {
+    // 1023 and 2000
+    font-size: 18px;
+  }
+}
+.text-23 {
+  font-size: 18px;
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 23px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 27px;
+  }
+}
+.text-22 {
+  font-size: 17px;
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 22px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 26px;
+  }
+}
+
+// Small texts
+.text-20 {
+  font-size: 16px;
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 20px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 24px;
+  }
+}
+.text-18 {
+  font-size: 14px;
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 18px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 22px;
+  }
+}
+.text-16 {
+  font-size: 11px;
+  @media screen and (min-width: $breakpoint-lg-max) {
+    // 1919
+    font-size: 16px;
+  }
+  @media screen and (min-width: $breakpoint-xl-max) {
+    // 5120
+    font-size: 20px;
+  }
+}
+.text-15 {
+  font-size: 15px;
+}
+.text-14 {
+  font-size: 14px;
+}
+.text-13 {
+  font-size: 13px;
+}
+.text-12 {
+  font-size: 12px;
+}
+.text-10 {
+  font-size: 10px;
+}
+.text-9 {
+  font-size: 9px;
+}
+.text-8 {
+  font-size: 8px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+.text-semibold {
+  font-weight: 600;
+}
+
+.line-height-0 {
+  line-height: 0 !important;
+}

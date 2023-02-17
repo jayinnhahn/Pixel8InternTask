@@ -1,0 +1,161 @@
+/**
+  pm Customed Class Names for Background, Text Colors
+
+  NOTE  : Refer to pm.variables.scss for variable references
+  USAGE : eg. pt-bg-accent-0, pt-bg-hover-accent-0, pt-text-accent-0, pt-text-hover-accent-0
+*/
+@import "pt.functions";
+
+.pt-bg-primary {
+  background-color: $primary !important;
+}
+.pt-bg-secondary {
+  background-color: $secondary !important;
+}
+.pt-pt-bg-accent-0 {
+  background-color: $accent-0;
+  @media screen and (min-width: $breakpoint-sm-max) {
+    background-color: $accent-0 !important;
+  }
+}
+.pt-text-primary {
+  color: $accent-1;
+}
+.pt-text-secondary {
+  color: $accent-2;
+}
+
+.pt-dark-mode {
+  .pt-bg-secondary {
+    background-color: $d-secondary !important;
+  }
+  .pt-bg-primary {
+    background-color: $d-primary !important;
+  }
+
+  .pt-text-primary {
+    color: $white !important;
+  }
+
+  .pt-right-drawer {
+    @media screen and (max-width: 1500px) {
+      box-shadow: -5px 0px 20px -8px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+// HEADER
+.pt-header {
+  .pt-bg-secondary {
+    @media screen and (max-width: $breakpoint-xs-max) {
+      background-color: $accent-0 !important;
+    }
+  }
+}
+
+//Index Page
+.pt-index {
+  .pt-text-secondary {
+    color: $primary;
+  }
+}
+
+// LEFT SIDEBAR
+.pt-left-drawer {
+  .pt-bg-secondary {
+    @media screen and (max-width: 767px) {
+      background-color: $accent-0 !important;
+    }
+  }
+}
+
+// RIGHT SIDEBAR
+.pt-right-drawer {
+  .pt-pt-bg-accent-1 {
+    background-color: $accent-1;
+    .pt-pt-bg-accent-1 {
+      background-color: $accent-1;
+    }
+  }
+  .pt-analog-clock-accent-1 {
+    filter: drop-shadow(5px 5px 3px #707070) !important;
+  }
+  @media screen and (max-width: 1500px) {
+    box-shadow: -5px 0px 20px -8px #aaaaaa;
+  }
+}
+
+// FOOTER
+.pt-footer {
+  .pt-bg-primary {
+    background-color: $primary;
+    @media screen and (min-width: $breakpoint-sm-min) {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .pt-pt-text-accent-0 {
+    color: $accent-0;
+  }
+}
+
+// Background accent color
+@for $i from 0 through 3 {
+  .pt-bg-accent-#{$i} {
+    background-color: color(a, $i);
+  }
+}
+
+// Background accent hover color
+@for $i from 0 through 3 {
+  .pt-bg-hover-accent-#{$i} {
+    transition: 0.2s ease-out;
+    &:hover {
+      background-color: color(a, $i) !important;
+    }
+  }
+}
+
+// Text accent colors
+@for $i from 0 through 3 {
+  .pt-text-accent-#{$i} {
+    color: color(a, $i);
+  }
+  // Text accent hover colors
+  .pt-text-hover-accent-#{$i} {
+    transition: 0.2s ease-out;
+    &:hover {
+      color: color(a, $i) !important;
+    }
+  }
+}
+
+// Notification colors
+.pt-warning-notif {
+  background-color: #fffaf3;
+  color: #7a4d05 !important;
+  border: 1px solid #ccbea0;
+}
+.pt-info-notif {
+  background-color: #f8ffff;
+  color: #0e566c !important;
+  border: 1px solid #bedfe6;
+}
+
+.pt-error-notif {
+  background-color: #fff6f6;
+  color: #973937 !important;
+  border: 1px solid #cb9e9e;
+}
+
+.pt-success-notif {
+  background-color: #f3ffd8;
+  color: #0c950e !important;
+  border: 1px solid #a8c599;
+}
+
+.pt-warning-notif,
+.pt-info-notif,
+.pt-error-notif,
+.pt-success-notif {
+  padding-right: 100px;
+}

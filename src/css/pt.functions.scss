@@ -1,0 +1,14 @@
+@function color($color, $num) {
+  // a - accent
+  @if $color == a {
+    @if $num == 0 {
+      @return $accent-0;
+    } @else if $num == 1 {
+      @return $accent-1;
+    } @else if $num == 2 {
+      @return $accent-2;
+    } @else if $num == 3 {
+      @return $accent-3;
+    }
+  }
+}

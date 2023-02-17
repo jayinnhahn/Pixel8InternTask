@@ -1,0 +1,39 @@
+/**
+  Core Customed Borders/ Colors,Radius
+*/
+@import "pt.functions";
+
+.pt-border-radius-50 {
+  border-radius: 50px;
+}
+
+.pt-border-radius-15 {
+  border-radius: 15px;
+}
+
+.pt-border-radius-12 {
+  border-radius: 12px;
+}
+
+.pt-border-radius-10 {
+  border-radius: 10px;
+}
+
+.pt-border-radius-8 {
+  border-radius: 8px;
+}
+
+/***
+  Border Styles
+*/
+.pt-border-1-dashed {
+  border: 1px dashed #869ab2;
+}
+
+// Border accent color
+@for $i from 0 through 3 {
+  .pt-border-accent-#{$i} {
+    border: 1px solid;
+    border-color: color(a, $i);
+  }
+}

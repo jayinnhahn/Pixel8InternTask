@@ -1,0 +1,151 @@
+.filter {
+  .btn-container {
+    background-color: #e0384a;
+    padding: 7px;
+    width: max-content;
+    margin: 10px;
+    position: relative;
+    .btn-filter {
+      border-radius: 10px;
+      opacity: 20%;
+      position: relative;
+      z-index: 1;
+    }
+    i {
+      color: #fff;
+      position: absolute;
+      left: 19px;
+      top: 20px;
+      font-size: 20px;
+      z-index: 0;
+    }
+  }
+}
+.back-icon {
+  position: fixed;
+  z-index: 1;
+  top: 12px;
+  left: -2px;
+  color: white;
+}
+// blurry background
+.q-dialog__backdrop {
+  pointer-events: fill;
+  backdrop-filter: blur(3px);
+}
+// content
+.q-card {
+  p {
+    padding: 0;
+    padding-bottom: 12px;
+    line-height: normal;
+  }
+
+  .line {
+    background-color: #ddd8d8;
+    padding: 0.3px;
+    width: 100%;
+    margin: 14px 0;
+  }
+
+  .btn-types {
+    border-radius: 2px;
+    font-weight: 600;
+  }
+  .not-selected {
+    background-color: #e8e8e8;
+    color: #202633;
+  }
+  .selected {
+    background-color: #dd3749;
+    color: white;
+  }
+  // range color
+  .q-date__calendar-item {
+    padding: 0;
+  }
+  .q-date__calendar-item--fill {
+    visibility: unset;
+    color: #101010;
+    opacity: 22%;
+  }
+  .q-date__range:before,
+  .q-date__range-from:before,
+  .q-date__range-to:before {
+    background-color: #dedede;
+    opacity: unset;
+  }
+
+  .bg-red-6 {
+    background: #dd3749 !important;
+  }
+  .spent-container {
+    width: 100%;
+  }
+  .q-input {
+    width: 50%;
+    border: 1px solid #dd3749;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 0 10px;
+    height: 30px;
+    .q-icon {
+      font-size: 18px;
+      padding-bottom: 12px;
+      position: absolute;
+      right: -3px;
+    }
+    .q-field__native {
+      padding-bottom: 19px;
+      font-weight: 600;
+      opacity: 63%;
+    }
+  }
+
+  .date {
+    display: flex;
+    gap: 15px;
+    .q-icon {
+      font-size: 18px;
+      padding-bottom: 12px;
+      position: absolute;
+      right: -3px;
+    }
+  }
+  .red {
+    color: #dd3749;
+  }
+  .q-time__header {
+    display: none;
+  }
+
+  // Calendar styles
+  .q-date {
+    margin: 10px 0;
+    -webkit-box-shadow: 0px -8px 7px -8px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px -8px 7px -8px rgba(0, 0, 0, 0.31);
+    width: 100%;
+  }
+  .q-date__header {
+    display: none;
+  }
+
+  .q-date__main {
+    background-color: transparent;
+    border: none;
+  }
+  .q-date__navigation {
+    button {
+      font-weight: bold;
+    }
+  }
+  .q-date__calendar-item button {
+    border-radius: 3px;
+  }
+
+  .q-date__calendar-weekdays > div {
+    color: #dd3749;
+    opacity: 100;
+    font-weight: 600;
+  }
+}
