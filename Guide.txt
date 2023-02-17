@@ -1,0 +1,16 @@
+-----------------Components used---------------
+RequestHeader.vue
+ChatBox.vue
+Reply.vue
+
+* Inserted in my created files
+
+---------------SCSS used----------------------
+RequestHeader.scss
+ChatBox.scss
+Reply.scss
+
+*Inserted in my created scss file for modifications
+*Exception: I modified the ChatBox.scss file because the styles doesnt apply when inserted in my scss files
+
+Open Page in http://localhost:8080/#/task-request
